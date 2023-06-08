@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.ico">
+</head>
+<body>
+    <header>
+        <p>СИСТЕМА УПРАВЛЕНИЯ БАЗАМИ ДАННЫХ ‹ЛИЧНОЕ ДЕЛО СТУДЕНТА›</p>
+    </header>
+    <section class="main-body">
+        <aside class="leftinf" id="leftinfo">
+            <div class="main-inf">
+                <div class="left-bar">
+                    <img class="foto" src="images/Image1.jpg">
+                </div>
+                <div class="right-bar">
+                    <input class="FIO" type="text" placeholder="Фамилия">
+                    <input class="FIO" type="text" placeholder="Имя">
+                </div>
+            </div>
+            <div class="last-inf">
+                <input class="otchestvo" type="text" placeholder="Отчество">
+                <input class="doljnost" type="text" placeholder="Должность">
+                <div class="dostuplevel">
+                    <p class="dostup">Уровень доступа</p>
+                    <input class="level" type="text">
+                </div>
+                <input class="mail" type="text" placeholder="Почта">
+            </div>
+            <button class="LogOut" onclick="location.href='index.html'">ВЫХОД</button>
+        </aside>
+        <div class="full-functions">
+            <h1 class="menu">МЕНЮ ФУНКЦИЙ</h1>
+            <div class="functions">
+                <button class="first" onclick="location.href='all-students.html'">Список всех студентов</button>
+                <button class="second" onclick="location.href='student.html'">Личное дело студента</button>
+                <button class="third">Печать документов по шаблону</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy Волков Владислав</p>
+    </footer>
+</body>
+</html>

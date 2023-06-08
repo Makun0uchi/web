@@ -1,0 +1,473 @@
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    font-family: "Avantgarde", sans-serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: "Avantgarde", sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: "Avantgarde", sans-serif;
+}
+
+.container {
+    background-color: rgb(237, 235, 235);
+    border-radius: 20px;
+    margin: 100px auto;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    font-family: "Avantgarde", sans-serif;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 16px black;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Avantgarde", sans-serif;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.user {
+    width: 90%;
+    padding: 13px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.show-password {
+    color: #999;
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.rememberuser {
+    margin-right: 8px;
+    margin-left: 20px;
+    transform: scale(1.5);
+}
+
+.remember {
+    margin-top: 10px;
+    float: left;
+}
+
+.LogIn {
+    display: block;
+    margin: 70px auto 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.LogIn:hover, .LogOut:hover {
+    background-color: black;
+    color: white;
+}
+
+.main-body {
+    display: flex;
+}
+
+.foto {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.leftinf {
+    flex: 30%;
+    background-color: rgb(225, 229, 229);
+    padding: 20px;
+}
+
+.full-functions, .all-students, .full-info {
+    flex: 70%;
+}
+
+.menu, .listname, .full-info-txt {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: "Avantgarde", sans-serif;
+}
+
+.main-inf {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.FIO {
+    border: none;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.right-bar {
+    margin: auto;
+}
+
+.otchestvo, .doljnost, .mail {
+    border: none;
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0 15px 5px;
+    border-radius: 10px;
+}
+
+.last-inf {
+    box-sizing: border-box;
+}
+
+.dostup {
+    margin-left: 15px;
+    font-family: "Avantgarde", sans-serif;
+    font-size: 17px;
+}
+
+.dostuplevel {
+    display: flex;
+    flex-direction: row;
+}
+
+.level {
+    margin: auto 0 auto 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.LogOut {
+    display: block;
+    margin: 20px auto 200px;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.functions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0;
+    grid-template-rows: 150px;
+}
+
+.first, .second, .third {
+    background-color: rgb(225, 229, 229);
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 24px;
+    border: none;
+    padding: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Avantgarde", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.first:hover, .second:hover, .third:hover {
+    background-color: black;
+    color: rgb(225, 229, 229);
+}
+
+.inf-toggler {
+    display: none;
+}
+
+.list {
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.table-section {
+    width: 800px;
+    max-height: 560px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: rgb(225, 229, 229);
+    box-shadow: 4px 4px 16px black;
+    margin: 40px auto;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px dashed gray;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+}
+
+.under {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.entersort {
+    background-color: rgb(255, 255, 255);
+    font-family: "Avantgarde", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 0 0 20px;
+}
+
+.sortbutton, .out {
+    margin: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    background-color: rgb(225, 229, 229);
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sorttext {
+    font-family: "Avantgarde", sans-serif;
+    font-size: 20px;
+}
+
+.sortbutton:hover, .out:hover {
+    background-color: black;
+    color: rgb(225, 229, 229);
+}
+
+.list td input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.list td input:focus {
+    outline: none;
+}
+
+.numinputing {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+    font-weight: bold;
+    font-family: "Avantgarde", sans-serif;
+    align-items: center;
+    font-size: 18px;
+}
+
+.placeforinput {
+    padding: 10px 20px;
+    margin: auto 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(225, 229, 229);
+}
+
+.search {
+    margin: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(225, 229, 229);
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: black;
+    color: rgb(225, 229, 229);
+}
+
+.students-info {
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: rgb(225, 229, 229);
+    box-shadow: 4px 4px 16px black;
+    margin: 40px auto 20px auto;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.infotable {
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.out2, .edit {
+    text-align: center;
+    font-weight: bold;
+    padding: 13px 26px;
+    border: none;
+    background-color: rgb(225, 229, 229);
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0px 40px 20px 40px;
+}
+
+.under2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.out2:hover, .edit:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1300px){
+    .main-body {
+        flex-direction: column;
+    }
+
+    .right-bar {
+        margin-top: 20px;
+    }
+    
+    .menu, .full-info-txt {
+        text-align: center;
+    }
+
+    .main-inf {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .foto {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .FIO {
+        border: none;
+        background-color: white;
+        width: 90%;
+        padding: 15px;
+        margin: 15px 0 15px 5px;
+        border-radius: 10px;
+    }
+
+    .last-inf {
+        text-align: center;
+    }
+
+    .dostuplevel {
+        justify-content: center;
+    }
+
+    .LogOut {
+        margin: 20px auto;
+    }
+
+    .leftinf {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .under {
+        align-items: center;
+        margin: 0 auto 20px auto;
+    }
+
+    .sortbutton, .out, .sorttext, .entersort {
+        margin: 10px;
+    }
+
+    .entersort {
+        padding: 8px;
+    }
+
+    .listname {
+        text-align: center;
+    }
+
+    .table-section {
+        max-height: none;
+        width: 90%;
+        max-height: 100%;
+    }
+
+    .numinputing {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .students-info {
+        margin: 20px auto;
+        max-height: none;
+        max-height: 100%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .functions {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 100px);
+    }
+
+    .under {
+        flex-direction: column;
+    }
+
+    .numinputing {
+        flex-direction: column;
+    }
+
+    .placeforinput {
+        margin: 10px auto 20px auto;
+    }
+
+    .search {
+        margin: 20px auto 0 auto;
+    }
+}

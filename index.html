@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.ico">
+</head>
+<body>
+    <header>
+        <p>СИСТЕМА УПРАВЛЕНИЯ БАЗАМИ ДАННЫХ ‹ЛИЧНОЕ ДЕЛО СТУДЕНТА›</p>
+    </header>
+    <div class="container"> 
+        <h1>ВХОД В СИСТЕМУ</h1>
+        <form>
+            <label for="username">Логин</label>
+            <input class="user" type="text" id="username" required>
+
+            <label for="username">Пароль</label>
+            <input class="user" type="password" id="userpass" required>
+            <span class="show-password" id="show-password-btn">Показать</span>
+
+            <label class="remember">
+                <input class="rememberuser" type="checkbox" value="yes">
+                Запомнить пользователя
+            </label>
+            <button class="LogIn" onclick="location.href='profile.html'">ВОЙТИ</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy Волков Владислав</p>
+    </footer>
+</body>
+</html>

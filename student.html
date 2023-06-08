@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студент</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.ico">
+</head>
+<body>
+    <header>
+        <p>СИСТЕМА УПРАВЛЕНИЯ БАЗАМИ ДАННЫХ ‹ЛИЧНОЕ ДЕЛО СТУДЕНТА›</p>
+    </header>
+    <section class="main-body">
+        <aside class="leftinf" id="leftinfo">
+            <div class="main-inf">
+                <div class="left-bar">
+                    <img class="foto" src="images/Image1.jpg">
+                </div>
+                <div class="right-bar">
+                    <input class="FIO" type="text" placeholder="Фамилия">
+                    <input class="FIO" type="text" placeholder="Имя">
+                </div>
+            </div>
+            <div class="last-inf">
+                <input class="otchestvo" type="text" placeholder="Отчество">
+                <input class="doljnost" type="text" placeholder="Должность">
+                <div class="dostuplevel">
+                    <p class="dostup">Уровень доступа</p>
+                    <input class="level" type="text">
+                </div>
+                <input class="mail" type="text" placeholder="Почта">
+            </div>
+            <button class="LogOut" onclick="location.href='index.html'">ВЫХОД</button>
+        </aside>
+        <div class="full-info">
+            <h1 class="full-info-txt">ЛИЧНОЕ ДЕЛО СТУДЕНТА</h1>
+            <form class="numinputing">
+                <label for="num">Введите № студ. билета:</label>
+                <input class="placeforinput" type="text" maxlength="8" id="num" placeholder="№ студ. билета" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                <button class="search">НАЙТИ</button>
+            </form>
+            <div class="students-info">
+                <table class="infotable">
+                    <tr>
+                        <th>Поле</th>
+                        <th>Данные</th>
+                    </tr>
+                    <tr>
+                        <td>Фамилия</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Имя</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Отчество</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Пол</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Дата рождения</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Место рождения</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Адрес регистрации</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Адрес места жительства</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Номер телефона</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Номер телефона родственника</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>СНИЛС</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Серия и номер паспорта</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Скан/копия паспорта</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ИНН</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="under2">
+                <button class="edit">РЕДАКТИРОВАТЬ</button>
+                <button class="out2" onclick="location.href='profile.html'">НАЗАД</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy Волков Владислав</p>
+    </footer>
+</body>
+</html>
